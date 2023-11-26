@@ -1,0 +1,64 @@
+@mixin color-link($b-color, $text-color) {
+  display: block;
+  border-radius: 30px;
+  border: 2px solid $b-color;
+  color: $text-color;
+  width: 312px;
+  height: 60px;
+  line-height: 60px;
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin: 0 auto; 
+  text-decoration: none;
+  background-color: transparent;
+  &:hover {
+    background: #FFA60D;
+    color: $text-color;
+    border-color: transparent;
+  }
+}
+
+@mixin lable ($bg-color) {
+  font-size: 0.875rem;
+  font-weight: 600;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background-color: $bg-color;
+  position: absolute;
+  top: -29px;
+  left: -29px;
+  color: $text-color;
+  line-height: 58px;
+  text-align: center;
+}
+
+
+@mixin lable1250 {
+  font-size: 0.75rem;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    top: -20px;
+    left: -20px;  
+}
+
+
+@mixin lable1024 {
+  font-size: 0.75rem;
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+  top: -23px;
+  left: -23px;  
+}
+
+
+@mixin lable768 {
+  font-size: 0.875rem;
+  width: 56px;
+  height: 56px;
+  line-height: 56px;
+  top: -28px;
+  left: -28px;
+}

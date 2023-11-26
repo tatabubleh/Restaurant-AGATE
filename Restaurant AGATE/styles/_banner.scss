@@ -1,0 +1,49 @@
+.banner {
+    text-align: center;
+    color: $text-color;
+    padding: 218px 0 185px;
+
+    &__heading {
+        font-family: 'Source Serif 4';
+        font-size: 5.3125rem;
+        max-width: 914px;
+        margin: 0 auto;
+    }
+
+    &__text {
+        margin: 35px 0 60px;
+        font-size: 1.562rem;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .banner {
+        padding: 183px 0 153px;
+
+        &__heading {
+            font-size: 3.75rem;
+            max-width: 697px;
+        }
+
+        &__text {
+            font-size: 1.125rem;
+            margin: 35px 0 63px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        padding: 171px 0 99px;
+
+        &__heading {
+            font-size: 3.125rem;
+            max-width: 329px;
+        }
+
+        &__text {
+            margin: 35px 0 66px;
+        }
+    }
+}

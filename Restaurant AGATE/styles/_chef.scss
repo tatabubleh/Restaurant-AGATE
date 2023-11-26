@@ -1,0 +1,67 @@
+.chef {
+    background-color: $secondary-color;
+    padding: 100px 0;
+
+    &_foto {
+        max-width: 398px;
+    }
+
+    &__heading {
+        margin: 30px 0;
+    }
+
+    &__job-title {
+        margin-bottom: 30px;
+        font-size: 1.562rem;
+        font-weight: 300;
+        color: #474747;
+    }
+
+    &__acquaintance {
+        font-weight: 300;
+        font-size: 1.875rem;
+        text-align: center;
+        max-width: 939px;
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .chef {
+        padding: 80px 0;
+
+        &_foto {
+            max-width: 282px;
+        }
+        
+        &__job-title {
+            font-size: 1.375rem;
+        }
+
+        &__acquaintance {
+            font-size: 1.375rem;
+            max-width: 691px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .chef {
+        padding: 70px 0;
+
+        &_foto {
+            max-width: 251px;
+        }
+         
+        &__job-title {
+            font-size: 1.25rem;
+        }
+
+        &__acquaintance {
+            font-size: 1.25rem;
+            max-width: 626px;
+        }
+    }
+}
