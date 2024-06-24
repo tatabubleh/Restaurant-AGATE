@@ -1,0 +1,16 @@
+.link--white {
+    @include color-link($text-color, $text-color);
+}
+
+.link--black {
+    @include color-link(#000, #000);
+}
+
+@media screen and (max-width: 1024px) {
+    .link {
+        width: 248px;
+        height: 48px;
+        line-height: 48px;
+        font-size: 1.0625rem;
+    }
+}

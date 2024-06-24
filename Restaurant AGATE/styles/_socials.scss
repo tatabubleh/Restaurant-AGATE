@@ -1,0 +1,15 @@
+.socials {
+    display: inline-block;
+
+    &__networks {
+        color: $text-color;
+        font-size: 50px;
+        &:not(:last-of-type) {
+            margin-right: 40px;
+    }
+}
+
+    &__networks i:hover {
+        transform: scale(1.5);
+    }
+}

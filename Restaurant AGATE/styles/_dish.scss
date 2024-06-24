@@ -1,0 +1,214 @@
+.dish {
+   width: calc((100% - 2 * 48px) / 3);
+   max-width: 360px;
+   text-align: left;
+   position: relative;
+   &:not(:last-of-type) {
+     margin-right: 48px;
+    }
+    &__foto {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    &__text-food {
+    margin-top: 35px;
+    }
+
+    &__title {
+      font-size: 1.875rem;
+      font-weight: 400;
+    }
+    &__text {
+      font-size: 1.125rem;
+      font-weight: 300;
+      line-height: 23px;
+      color: $second-color;
+      margin: 15px 0;
+    }
+    &__price {
+      font-size: 1.125rem;
+      font-weight: 700;
+    }
+  }
+
+
+
+
+.dish--red::before {
+  @include lable(#d33b3b);
+  content: "HOT!";
+}
+
+.dish--green::before {
+  @include lable(#b3e151);
+  content: "NEW!";
+}
+
+.dish--orange::before {
+  @include lable(#e5a434);
+  content: "HIT!";
+}
+
+@media screen and (max-width: 1440px) {
+  .dish {
+    display: inline-block;
+    width: calc((100% - 2 * 48px) / 3);
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .dish {
+      max-width: 310px;
+      width: calc((100% - 2*30px)/3);
+      &:not(:last-of-type) {
+          margin-right: 30px;
+      }
+      &::before {
+          @include lable1250;
+      } 
+
+      &___text {
+      font-size: 1rem;
+      }   
+  }         
+}
+
+@media screen and (max-width: 1040px) {
+  .dish {
+      max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .dish {
+    max-width: 253px;
+    width: calc((100% - 2 * 92px) / 3);
+    &:not(:last-of-type) {
+      margin-right: 92px;
+    }
+    &::before {
+      @include lable1024;
+    } 
+
+  &__text-food {
+    margin-top: 15px;
+  }
+    &__title {
+        font-size: 1.5625rem;
+    }
+    &__text {
+        font-size: 0.93rem;
+        line-height: 19px;
+        margin: 15px 0 17px;
+    }
+    &__price {
+        font-size: 0.9375rem;
+    }
+}
+}
+
+
+@media screen and (max-width: 1000px) {
+  .dish {
+      max-width: 220px;
+      width: calc((100% - 2*42px)/3);
+      &:not(:last-of-type) {
+          margin-right: 42px;
+      }
+      &::before {
+          @include lable1250;
+      } 
+
+      &__text {
+          font-size: 0.8rem;
+      }
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .dish {
+      max-width: 200px;
+      width: calc((100% - 2*32px)/3);
+      &:not(:last-of-type) {
+          margin-right: 32px;
+      }
+
+      &__text {
+          font-size: 0.7rem;
+      }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .dish {
+    display: flex;
+    max-width: 692px;
+    width: 100%;
+    &:not(:last-of-type) {
+      margin-right: 0;
+      margin-bottom: 58px;
+    }
+    &::before {
+      @include lable768;
+    }
+    
+    &__food {
+      max-width: 320px;
+    }
+    
+    &__text-food {
+      text-align: left;
+      max-width: 348px;
+      padding-top: 17px;
+      margin: 0 0 0 24px;
+    }
+     
+      &__text {
+          font-size: 1.25rem;
+          line-height: 25px;
+          margin: 20px 0;
+      }
+      &__price {
+          font-size: 1.25rem;
+      }
+  }
+}
+
+
+
+@media screen and (max-width: 678px) {
+  .dish {
+      max-width: 300px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      &:not(:last-of-type) {
+          margin-bottom: 48px;
+      }
+      &__foto {
+          max-width: 300px; 
+      }
+  
+  &__text-food {
+      max-width: 300px;
+      padding: 0;
+      margin: 15px 0 0;
+  }
+      &__title {
+          font-size: 1.25rem;
+      }    
+      &__text {
+          margin: 15px 0;
+          font-size: 1.125rem;
+      }
+      &__price {
+          font-size: 1.125rem;
+      }
+  }
+}        
+
+

@@ -1,0 +1,23 @@
+.popular {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1024px) { 
+    .popular {
+        margin-bottom:45px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .popular {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .popular {
+        align-items: center;
+    }
+}
